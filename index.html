@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliz Dia das Mulheres!</title>
+    
+    <!-- Adicionando a nova fonte romântica do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
     <style>
         /* Estilos base com Fundo Fotográfico Embutido */
         body, html {
@@ -13,13 +19,13 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             overflow-x: hidden;
             
-            /* A mágica acontece aqui: Cor de fundo + Filtro escuro + Foto */
+            /* Cor de fundo + Filtro escuro + Foto */
             background-color: #551919; 
             background-image: 
                 linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                 url('foto_fundo.jpeg');
             background-size: cover;
-            background-position: center;
+            background-position: center top;
             background-attachment: fixed;
         }
 
@@ -31,33 +37,37 @@
             text-align: center;
         }
 
-        /* Cabeçalho com Efeito de Brilho e Sombra Profunda */
+        /* Cabeçalho com NOVA FONTE e SOMBRA ROSA/VERMELHA */
         header {
             margin-bottom: 60px;
             color: white;
-            text-shadow: 
-                0 0 10px rgba(232, 93, 117, 0.8), 
-                0 0 20px rgba(232, 93, 117, 0.5), 
-                0 4px 6px rgba(0,0,0,0.2); 
         }
 
         header h1 {
             margin: 0;
-            font-size: 3em;
+            font-family: 'Dancing Script', cursive; /* Fonte cursiva e romântica */
+            font-size: 4.5em; /* Aumentado para dar mais destaque à fonte desenhada */
             letter-spacing: 2px;
-            font-weight: bold;
+            font-weight: 700;
+            color: #fff0f3; /* Um branco levemente rosado */
+            
+            /* Sombreado misturando brilho rosa vibrante e tom avermelhado profundo */
+            text-shadow: 
+                2px 2px 0px #c9184a, /* Deslocamento em vermelho/rosa escuro */
+                0 0 15px rgba(255, 77, 109, 0.8), /* Brilho rosa vibrante */
+                0 5px 15px rgba(0, 0, 0, 0.6); /* Sombra escura para não sumir no fundo */
         }
 
         header p {
             font-size: 1.3em;
             font-style: italic;
             margin-top: 15px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            text-shadow: 1px 1px 4px rgba(201, 24, 74, 0.8), 0 2px 4px rgba(0,0,0,0.8);
         }
 
         /* Área da Foto Principal */
         .photo-feature {
-            margin-bottom: 60px;
+            margin-bottom: 20px;
         }
 
         .photo-feature img {
@@ -67,7 +77,7 @@
             max-height: 800px;
             object-fit: cover;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7); /* Sombra forte na foto */
             border-top: 6px solid #e85d75;
             transition: transform 0.3s ease;
         }
@@ -76,14 +86,14 @@
             transform: scale(1.02);
         }
 
-        /* Área da Carta/Texto com Design Detalhado e Sombreado */
+        /* Área da Carta/Texto */
         .carta-container {
             background-color: #fdf6f5;
             padding: 60px;
             border-radius: 20px;
             box-shadow: 
-                0 15px 50px rgba(0,0,0,0.15),
-                0 10px 30px rgba(232, 93, 117, 0.05);
+                0 15px 50px rgba(0,0,0,0.3),
+                0 10px 30px rgba(232, 93, 117, 0.1);
             border-top: 6px solid #e85d75;
             text-align: left;
             line-height: 2;
@@ -117,10 +127,22 @@
         footer {
             margin-top: -60px;
             padding: 30px;
-            background-color: rgba(51, 51, 51, 0.8);
+            background-color: rgba(51, 51, 51, 0.9);
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.9em;
             text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Ajuste responsivo para telemóveis */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            .carta-container {
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
@@ -134,16 +156,31 @@
         </header>
 
         <div class="photo-feature">
+            <!-- Arquivo da sua foto -->
             <img src="foto_grande.jpeg" alt="A mulher mais incrível">
+        </div>
+
+        <!-- Reprodutor de Música -->
+        <div style="margin: 20px 0 60px 0; text-align: center;">
+            <p style="color: #fdf6f5; font-size: 1.1em; font-style: italic; margin-bottom: 10px; text-shadow: 1px 1px 4px #000;">
+                Dê o play antes de ler ❤️
+            </p>
+            <!-- Arquivo da sua música -->
+            <audio controls loop>
+                <source src="musica.mp3" type="audio/mpeg">
+            </audio>
         </div>
 
         <div class="carta-container">
             <h2>Para você...</h2>
             <p>
-                É como eu sempre digo... Você é foda! Eu te amo demais meu amor e não podia deixar passar esse dia em branco, voce sabe da minha luta, as vezes pode parecer que eu
-                estou meio distante, meio frio, que não me importo com voce. Mas isso não passa de impressão, eu me importo demais com voce e é VOCE que me mantem vivo e que me da animo pra lutar todos os dias,
-                tenho certeza que se nao fosse voce, eu ja teria tomado rumos na minha vida que nao gosto nem de imaginar! Obrigado por tudo, obrigado por estar aqui, voce é luz, é guerreira e muito forte. Vamos
-                comemorar muitos outros dias como esse ainda e nos proximos, sem sombra de duvidas, estaremos muito melhores do que hoje! Eu te amo minha princesa!
+                É como eu sempre digo... Você é foda! Eu te amo demais, meu amor, e não podia deixar passar esse dia em branco. Você sabe da minha luta, às vezes pode parecer que eu estou meio distante, meio frio, que não me importo com você. Mas isso não passa de impressão! Eu me importo demais com você e é VOCÊ que me mantém vivo e que me dá ânimo para lutar todos os dias. 
+            </p>
+            <p>
+                Tenho certeza que se não fosse você, eu já teria tomado rumos na minha vida que não gosto nem de imaginar. Obrigado por tudo, obrigado por estar aqui. Você é luz, é guerreira e muito forte. Vamos comemorar muitos outros dias como esse ainda, e nos próximos, sem sombra de dúvidas, estaremos muito melhores do que hoje! 
+            </p>
+            <p>
+                Eu te amo, minha princesa!
             </p>
             
             <div class="assinatura">
