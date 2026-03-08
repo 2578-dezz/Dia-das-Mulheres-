@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia das Mulheres!</title>
+    <style>
+        /* Estilos base com Fundo Fotográfico Embutido */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+            
+            /* A mágica acontece aqui: Cor de fundo + Filtro escuro + Foto */
+            background-color: #551919; 
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('foto_fundo.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px 100px;
+            text-align: center;
+        }
+
+        /* Cabeçalho com Efeito de Brilho e Sombra Profunda */
+        header {
+            margin-bottom: 60px;
+            color: white;
+            text-shadow: 
+                0 0 10px rgba(232, 93, 117, 0.8), 
+                0 0 20px rgba(232, 93, 117, 0.5), 
+                0 4px 6px rgba(0,0,0,0.2); 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-style: italic;
+            margin-top: 15px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Área da Foto Principal */
+        .photo-feature {
+            margin-bottom: 60px;
+        }
+
+        .photo-feature img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            max-height: 800px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+            border-top: 6px solid #e85d75;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-feature img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Área da Carta/Texto com Design Detalhado e Sombreado */
+        .carta-container {
+            background-color: #fdf6f5;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 
+                0 15px 50px rgba(0,0,0,0.15),
+                0 10px 30px rgba(232, 93, 117, 0.05);
+            border-top: 6px solid #e85d75;
+            text-align: left;
+            line-height: 2;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .carta-container h2 {
+            text-align: center;
+            color: #e85d75;
+            margin-top: 0;
+            font-size: 1.8em;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .carta-container p {
+            margin-bottom: 20px;
+        }
+
+        .assinatura {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 40px;
+            color: #e85d75;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px rgba(232, 93, 117, 0.3);
+        }
+
+        /* Rodapé */
+        footer {
+            margin-top: -60px;
+            padding: 30px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Feliz Dia das Mulheres, Meu Amor!</h1>
+            <p>Outra pequena homenagem para a mulher que mais me enche de amor e orgulho nesse mundo!</p>
+        </header>
+
+        <div class="photo-feature">
+            <img src="foto_grande.jpeg" alt="A mulher mais incrível">
+        </div>
+
+        <div class="carta-container">
+            <h2>Para você...</h2>
+            <p>
+                É como eu sempre digo... Você é foda! Eu te amo demais meu amor e não podia deixar passar esse dia em branco, voce sabe da minha luta, as vezes pode parecer que eu
+                estou meio distante, meio frio, que não me importo com voce. Mas isso não passa de impressão, eu me importo demais com voce e é VOCE que me mantem vivo e que me da animo pra lutar todos os dias,
+                tenho certeza que se nao fosse voce, eu ja teria tomado rumos na minha vida que nao gosto nem de imaginar! Obrigado por tudo, obrigado por estar aqui, voce é luz, é guerreira e muito forte. Vamos
+                comemorar muitos outros dias como esse ainda e nos proximos, sem sombra de duvidas, estaremos muito melhores do que hoje! Eu te amo minha princesa!
+            </p>
+            
+            <div class="assinatura">
+                Com todo meu amor,<br>
+                Paulo Emanuel
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Feito com ❤️ por mim para você. - 08 de Março de 2026
+    </footer>
+
+</body>
+</html>
